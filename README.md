@@ -1,6 +1,6 @@
 # Awesome MagicGrid MBSE [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of resources for the MagicGrid MBSE methodology: official material, the Book of Knowledge, papers and case studies, talks, training, example models, and tool support. For SysML v2 language and tooling, see the sister list [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2).
+A curated list of resources for the MagicGrid MBSE methodology: official material, the Book of Knowledge, papers and case studies, talks, training, example models, and tool support. For SysML v2 language and tooling, see the sister list under Related Methodologies.
 
 > This list is maintained independently. It is not affiliated with, endorsed by, or sponsored by Dassault Systemes or No Magic. MagicGrid is a methodology brand of No Magic, now part of Dassault Systemes. Every entry links to a legitimate public source; this list does not host copies of the MagicGrid Book of Knowledge or other copyrighted material.
 
@@ -87,7 +87,7 @@ A curated list of resources for the MagicGrid MBSE methodology: official materia
 - [Capella (Arcadia)](https://mbse-capella.org/arcadia.html) - Arcadia method page for Capella, an open source peer MBSE methodology.
 - [Harmony-SE](https://www.ibm.com/products/engineering-rhapsody) - IBM Engineering Rhapsody product page, home of the Harmony-SE (Harmony for Systems Engineering) method.
 - [OOSEM](https://www.incose.org/communities/working-groups-initiatives/object-oriented-se-method) - INCOSE Object-Oriented Systems Engineering Method (OOSEM) working group page.
-- [SYSMOD](https://mbse4u.com/sysmod/) - SYSMOD pragmatic MBSE with SysML methodology page from MBSE4U.
+- [SYSMOD](https://mbse4u.com/sysmod/) - Pragmatic MBSE with SysML methodology page from MBSE4U.
 
 ## Contributing
 
