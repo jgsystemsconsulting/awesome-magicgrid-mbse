@@ -25,7 +25,7 @@ A curated list of resources for the MagicGrid MBSE methodology: official materia
 
 ## Books and Formal Publications
 
-- [MagicGrid Book of Knowledge (Goodreads)](https://www.goodreads.com/book/show/56720281-magicgrid-book-of-knowledge) - Catalog entry for the MagicGrid Book of Knowledge by No Magic methodology staff (Aiste Aleksandraviciene et al.), Vitae Litera, 2018.
+- [MagicGrid Book of Knowledge (Google Books)](https://books.google.com/books?q=MagicGrid+Book+of+Knowledge+Aleksandraviciene) - Google Books catalog search for the MagicGrid Book of Knowledge by No Magic methodology staff (Aiste Aleksandraviciene et al.), Vitae Litera, 2018.
 - [MagicGrid Book of Knowledge (vendor page)](https://discover.3ds.com/magicgrid-book-of-knowledge) - Dassault Systemes discover page describing the MagicGrid Book of Knowledge as a practical guide to systems modeling with MagicGrid.
 
 ## Papers and Case Studies
@@ -65,6 +65,7 @@ A curated list of resources for the MagicGrid MBSE methodology: official materia
 
 ## Example Models
 
+- [MagicGrid VCCS sample model](https://github.com/matthieugourssies/sysml-magicgrid-vccs) - Public SysML MagicGrid vehicle climate control sample model repository (sysml-magicgrid-vccs).
 - [StockTicker MagicGrid SysML v2 samples](https://github.com/turbogeek/sysmlv2-validator) - Public SysML v2 Stock Ticker sample set organized on MagicGrid problem, solution, and implementation domains.
 - [SysML v2 MagicGrid methodology templates](https://github.com/turbogeek/SysMLv2CheatSheet) - Public SysML v2 cheat-sheet and lab repo that includes MagicGrid methodology templates and MagicGrid-tagged example models.
 
