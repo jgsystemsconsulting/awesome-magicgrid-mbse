@@ -57,7 +57,7 @@ A curated list of resources for the MagicGrid MBSE methodology: official materia
 - [Functional analysis in MagicGrid](https://youtu.be/wl5frqw-MTk) - Talk on functional analysis with SysML activity diagrams in MagicGrid on the MBSE Believer channel.
 - [Hypermodeling with MagicGrid](https://youtu.be/0ctdRBGiBk0) - Demo of hypermodeling applied with the MagicGrid method on the Systems Architecture Guild channel.
 - [MagicGrid methodology walkthrough](https://youtu.be/todMOBqirAA) - Walkthrough of the MagicGrid SysML methodology for V1 and V2 on the CameoMagic channel.
-- [MoEs and traceability](https://youtu.be/CsF2nKbO0KY) - Talk on methods of execution (MoEs) and traceability in MagicGrid on the MBSE Believer channel.
+- [MoEs and traceability](https://youtu.be/CsF2nKbO0KY) - Talk on measures of effectiveness (MoEs) and traceability in MagicGrid on the MBSE Believer channel.
 - [Radar sample model](https://youtu.be/JtWZQM-yamk) - Demo building an aircraft radar display sample model with MagicGrid simulation and analysis on the MBSE Execution channel.
 - [Requirement metrics and solution domain](https://youtu.be/bGhUqg0wcKw) - Tutorial on requirement metrics and the transition into the MagicGrid solution domain on the MBSE Believer channel.
 - [Solution domain system structure practice](https://youtu.be/HBsmHkX8jWs) - Practice session on system structure in the MagicGrid solution domain from the BoK second edition on the MBSE Believer channel.
