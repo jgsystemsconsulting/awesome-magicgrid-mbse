@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this list in your work, please cite it using this metadata."
+title: Awesome MagicGrid MBSE
+authors:
+  - entity:
+      name: "JG Systems Consulting Ltd"
+license: CC0-1.0
+repository-code: https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse
+preferred-citation:
+  type: generic
+  title: "Awesome MagicGrid MBSE"
+  authors:
+    - entity:
+        name: "JG Systems Consulting Ltd"
+  year: 2026
+  repository-code: https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse
