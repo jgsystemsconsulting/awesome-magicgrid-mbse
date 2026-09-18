@@ -161,7 +161,7 @@ rejection reason.
 | name | org-catalogue-entry |
 | size | M |
 | deps | P1, P2 |
-| status | ready |
+| status | done |
 | promoted_ids | [] |
 | corroboration | 2 (value, cohesion) |
 | first_prompt | `/superpowers-process full org catalogue entry` |
