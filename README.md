@@ -9,7 +9,6 @@
 
 > MagicGrid method and MBSE practice for systems modeling toolchains.
 
-A curated list of resources for the MagicGrid MBSE methodology: official material, the Book of Knowledge, papers and case studies, talks, training, example models, and tool support. For SysML v2 language and tooling, see the sister list under Related Methodologies.
 
 > MagicGrid method and MBSE practice for systems modeling toolchains.
 
