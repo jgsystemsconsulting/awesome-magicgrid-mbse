@@ -1,0 +1,4 @@
+Product: Awesome MagicGrid MBSE
+Version: 1.0.0
+Built: 2026-09-18T12:34:02Z
+Tag: v1.0.0

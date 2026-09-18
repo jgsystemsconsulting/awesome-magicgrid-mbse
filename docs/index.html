@@ -1,116 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="dark">
-<title>Awesome MagicGrid MBSE - JGS</title>
-<meta name="description" content="A curated list of MagicGrid MBSE methodology resources: official material, the Book of Knowledge, papers and case studies, talks, training, example models, and tool support.">
-<link rel="canonical" href="https://jgsystemsconsulting.github.io/awesome-magicgrid-mbse/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap">
-<link rel="stylesheet" href="site.css">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://jgsystemsconsulting.github.io/awesome-magicgrid-mbse/">
-<meta property="og:title" content="Awesome MagicGrid MBSE - JGS">
-<meta property="og:description" content="A curated list of MagicGrid MBSE methodology resources: official material, the Book of Knowledge, papers and case studies, talks, training, example models, and tool support.">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Awesome MagicGrid MBSE - JGS">
-<meta name="twitter:description" content="A curated list of MagicGrid MBSE methodology resources: official material, the Book of Knowledge, papers and case studies, talks, training, example models, and tool support.">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Awesome MagicGrid MBSE",
-  "applicationCategory": "DeveloperApplication",
-  "operatingSystem": "Web",
-  "url": "https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse",
-  "description": "A curated list of MagicGrid MBSE methodology resources: official material, the Book of Knowledge, papers and case studies, talks, training, example models, and tool support.",
-  "license": "https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/LICENSE"
-}
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Awesome MagicGrid MBSE</title>
+  <meta name="description" content="Curated MagicGrid MBSE resources for systems engineering practitioners.">
+  <link rel="canonical" href="https://jgsystemsconsulting.github.io/awesome-magicgrid-mbse/">
+  <meta property="og:title" content="Awesome MagicGrid MBSE">
+  <meta property="og:description" content="Curated MagicGrid MBSE resources for systems engineering practitioners.">
+  <meta property="og:url" content="https://jgsystemsconsulting.github.io/awesome-magicgrid-mbse/">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23157adb'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='17' font-weight='600' fill='%23ffffff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/IBMPlexSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: "IBM Plex Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("fonts/IBMPlexSans-Regular.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: "IBM Plex Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url("fonts/IBMPlexSans-Medium.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: "IBM Plex Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url("fonts/IBMPlexSans-SemiBold.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: "IBM Plex Mono";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("fonts/IBMPlexMono-Regular.woff2") format("woff2");
+    }
+
+    :root {
+      --color-bg: oklch(0.985 0.006 255);
+      --color-surface-1: oklch(0.995 0.005 255);
+      --color-surface-2: oklch(0.998 0.004 255);
+      --color-surface-3: oklch(1.0 0 0);
+      --color-primary: oklch(0.19 0.015 260);
+      --color-accent: oklch(0.58 0.17 253);
+      --color-text: oklch(0.17 0.012 258);
+      --color-text-muted: oklch(0.50 0.012 258);
+      --color-border: oklch(0.915 0.008 255);
+      --color-focus-ring: var(--color-accent);
+      --color-success: oklch(0.45 0.10 150);
+      --color-danger: oklch(0.50 0.14 25);
+      --color-attention: oklch(0.55 0.12 85);
+
+      --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+      --text-meta: 0.8rem;   /* 12.8px */
+      --text-body: 1rem;     /* 16px */
+      --text-h3: 1.25rem;    /* 20px */
+      --text-h2: 1.5625rem;  /* 25px */
+      --text-h1: 1.9375rem;  /* 31px */
+
+      --space-1: 4px;
+      --space-2: 8px;
+      --space-3: 16px;
+      --space-4: 32px;
+      --space-5: 56px;
+      --space-section: 80px;
+
+      --radius-sm: 3px;
+      --radius-md: 5px;
+      --radius-lg: 7px;
+
+      --shell-max: 1120px;
+      --prose-max: 70ch;
+
+      color-scheme: light;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      font-size: var(--text-body);
+      font-weight: 400;
+      line-height: 1.55;
+      color: var(--color-text);
+      background: var(--color-bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--color-accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.15em;
+      transition: color 160ms ease-out;
+    }
+
+    a:hover {
+      color: var(--color-primary);
+    }
+
+    a:focus-visible,
+    .primary:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--color-focus-ring);
+      outline-offset: 2px;
+    }
+
+    .shell {
+      width: min(100% - 2 * var(--space-3), var(--shell-max));
+      margin-inline: auto;
+    }
+
+    .prose {
+      max-width: var(--prose-max);
+    }
+
+    /* Nav */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--color-bg);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .site-nav .shell {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-2) var(--space-3);
+      padding-block: var(--space-2);
+      min-height: 48px;
+    }
+
+    .site-nav a {
+      font-size: var(--text-meta);
+      font-weight: 500;
+      color: var(--color-text-muted);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: var(--space-1) var(--space-1);
+    }
+
+    .site-nav a:hover {
+      color: var(--color-accent);
+      text-decoration: underline;
+    }
+
+    .site-nav .nav-full {
+      margin-inline-start: auto;
+      color: var(--color-accent);
+    }
+
+    /* Main sections */
+    section {
+      padding-block: var(--space-section);
+    }
+
+    section + section {
+      border-top: 1px solid var(--color-border);
+    }
+
+    h1, h2, h3 {
+      color: var(--color-primary);
+      line-height: 1.25;
+      margin: 0 0 var(--space-3);
+    }
+
+    h1 {
+      font-size: var(--text-h1);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: var(--text-h2);
+      font-weight: 600;
+      letter-spacing: -0.015em;
+    }
+
+    h3 {
+      font-size: var(--text-h3);
+      font-weight: 500;
+    }
+
+    p {
+      margin: 0 0 var(--space-3);
+      color: var(--color-text);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .muted {
+      color: var(--color-text-muted);
+    }
+
+    /* Hero */
+    #hero {
+      padding-block: var(--space-5) var(--space-section);
+    }
+
+    #hero .claim {
+      font-size: var(--text-body);
+      max-width: var(--prose-max);
+      margin-bottom: var(--space-3);
+    }
+
+    #hero .support {
+      color: var(--color-text-muted);
+      max-width: var(--prose-max);
+      margin-bottom: var(--space-4);
+    }
+
+    .primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 var(--space-4);
+      font-family: var(--font-sans);
+      font-size: var(--text-body);
+      font-weight: 500;
+      line-height: 1.2;
+      color: var(--color-surface-3);
+      background: var(--color-accent);
+      border: 1px solid var(--color-accent);
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      box-shadow: 0 1px 2px color-mix(in oklch, var(--color-primary) 12%, transparent);
+      transition: background-color 160ms ease-out, border-color 160ms ease-out, color 160ms ease-out;
+    }
+
+    .primary:hover {
+      color: var(--color-surface-3);
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    /* Evidence */
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin: 0 0 var(--space-4);
+      padding: 0;
+      list-style: none;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: baseline;
+      gap: var(--space-2);
+      padding: var(--space-1) var(--space-2);
+      font-family: var(--font-mono);
+      font-size: var(--text-meta);
+      font-variant-numeric: tabular-nums;
+      color: var(--color-text-muted);
+      background: var(--color-surface-1);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+    }
+
+    .chip dt {
+      font-weight: 400;
+      margin: 0;
+    }
+
+    .chip dd {
+      margin: 0;
+      color: var(--color-text);
+      font-weight: 400;
+    }
+
+    .family {
+      max-width: var(--prose-max);
+      color: var(--color-text-muted);
+      font-size: var(--text-body);
+    }
+
+    /* Sections index */
+    .section-index {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .section-index li {
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .section-index a {
+      display: block;
+      padding: var(--space-3) 0;
+      font-weight: 500;
+      color: var(--color-text);
+      text-decoration: none;
+    }
+
+    .section-index a:hover {
+      color: var(--color-accent);
+      text-decoration: underline;
+    }
+
+    @media (min-width: 1024px) {
+      .section-index {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: var(--space-4);
+      }
+
+      .section-index li:nth-child(odd) {
+        padding-inline-end: var(--space-3);
+      }
+
+      .section-index li:nth-child(even) {
+        padding-inline-start: var(--space-3);
+        border-inline-start: 1px solid var(--color-border);
+      }
+    }
+
+    /* Contribute */
+    .link-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      max-width: var(--prose-max);
+    }
+
+    .link-list li {
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .link-list li:first-child {
+      border-top: 1px solid var(--color-border);
+    }
+
+    .link-list a {
+      display: block;
+      padding: var(--space-3) 0;
+      font-weight: 500;
+      color: var(--color-text);
+      text-decoration: none;
+    }
+
+    .link-list a:hover {
+      color: var(--color-accent);
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid var(--color-border);
+      padding-block: var(--space-4);
+      font-size: var(--text-meta);
+      color: var(--color-text-muted);
+    }
+
+    .site-footer p {
+      margin: 0;
+      color: var(--color-text-muted);
+    }
+
+    .site-footer a {
+      font-weight: 500;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="masthead">
-  <div class="wrap">
-    <span>CLASSIFICATION: PUBLIC</span>
-    <span>LICENCE: CC0</span>
-    <span>DOC-ID: JGS-AWESOME-MAGICGRID-MBSE</span>
-    <span>REV: 1.0</span>
-  </div>
-</div>
-<nav class="site">
-  <div class="wrap">
-    <a href="#what">What it is</a>
-    <a href="#categories">Categories</a>
-    <a href="#contribute">Contribute</a>
-    <a href="#maintenance">Maintenance</a>
-    <a href="#links">Links</a>
-  </div>
-</nav>
-<section class="hero" id="top">
-  <div class="wrap">
-    <a class="badge" href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
-    <h1>Awesome MagicGrid MBSE</h1>
-    <p>A curated list of MagicGrid methodology resources: official material, the Book of Knowledge, papers and case studies, talks, training, example models, and tool support.</p>
-  </div>
-</section>
-<section id="what">
-  <div class="wrap">
-    <div class="shead"><h2>What it is</h2></div>
-    <p class="lead">Awesome MagicGrid MBSE is an awesome-style curated list for the MagicGrid methodology, the grid-based MBSE method from No Magic, now part of Dassault Systemes. It collects official material, the Book of Knowledge, papers and case studies, talks, training, example models, tool support, and brief pointers to peer methodologies. For the SysML v2 language and its tooling, see the sister list <a href="https://github.com/jgsystemsconsulting/awesome-sysml-v2">awesome-sysml-v2</a>. Entries are maintained in the <a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md">README</a>; this site is a front door, not a mirror.</p>
-  </div>
-</section>
-<section id="categories">
-  <div class="wrap">
-    <div class="shead"><h2>Category map</h2></div>
-    <table class="data">
-      <thead>
-        <tr><th scope="col">Category</th><th scope="col">About</th></tr>
-      </thead>
-      <tbody>
-        <tr><td><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#official-resources">Official Resources</a></td><td>Vendor documentation hub, training catalog, and official MagicGrid course pages.</td></tr>
-        <tr><td><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#books-and-formal-publications">Books and Formal Publications</a></td><td>The MagicGrid Book of Knowledge and other formal publications about the method.</td></tr>
-        <tr><td><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#papers-and-case-studies">Papers and Case Studies</a></td><td>INCOSE, Wiley, Springer, and ACM papers with DOIs, from the origin paper to current case studies.</td></tr>
-        <tr><td><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#training-and-courses">Training and Courses</a></td><td>Partner courses and seminars beyond the official catalog.</td></tr>
-        <tr><td><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#videos-and-talks">Videos and Talks</a></td><td>Vendor walkthroughs, seminars, and conference talks on applying MagicGrid.</td></tr>
-        <tr><td><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#example-models">Example Models</a></td><td>Public MagicGrid sample models to learn from and build on.</td></tr>
-        <tr><td><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#tool-support">Tool Support</a></td><td>CATIA Magic and Cameo Systems Modeler, the tools that implement the method.</td></tr>
-        <tr><td><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#community">Community</a></td><td>INCOSE venues and practitioner circles around the method.</td></tr>
-        <tr><td><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#related-methodologies">Related Methodologies</a></td><td>One-line pointers to peer methodologies and the sister list.</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-<section id="contribute">
-  <div class="wrap">
-    <div class="shead"><h2>How to contribute</h2></div>
-    <p class="lead">Pull requests are welcome. Entry additions go through the <a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md">README</a> via a pull request; the process, entry format, and acceptance criteria live in <a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/contributing.md">contributing.md</a>.</p>
-  </div>
-</section>
-<section id="maintenance">
-  <div class="wrap">
-    <div class="shead"><h2>Maintenance cadence</h2></div>
-    <p class="lead">Review cycles, link checking, and entry curation run on the cadence documented in <a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/contributing.md#maintenance">contributing.md</a>.</p>
-  </div>
-</section>
-<section id="links">
-  <div class="wrap">
-    <div class="shead"><h2>Repository links</h2></div>
-    <ul>
-      <li><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md">README</a></li>
-      <li><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/contributing.md">contributing.md</a></li>
-      <li><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse">Repository root</a></li>
-      <li><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/issues">Issues</a></li>
-      <li><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/tree/main/docs">Site source (docs/)</a></li>
-    </ul>
-  </div>
-</section>
-<footer>
-  <div class="wrap">
-    <p class="foot-note"><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/LICENSE">CC0 Licence</a>. The <a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md">README</a> is the source of truth for all entries.</p>
-  </div>
-</footer>
+  <nav class="site-nav" aria-label="Page">
+    <div class="shell">
+      <a href="#hero">Top</a>
+      <a href="#evidence">Status</a>
+      <a href="#sections">Sections</a>
+      <a href="#curation">Curation</a>
+      <a href="#contribute">Contribute</a>
+      <a class="nav-full" href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md">Open full list</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="hero">
+      <div class="shell">
+        <h1>Awesome MagicGrid MBSE</h1>
+        <p class="claim">Curated MagicGrid methodology resources for MBSE practitioners: official material, the Book of Knowledge, papers and case studies, training, talks, example models, and tool support.</p>
+        <p class="support">Open the full list on GitHub for searchable Contents, then jump to the section that matches your work.</p>
+        <a class="primary" href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md">Open full list</a>
+      </div>
+    </section>
+
+    <section id="evidence" aria-labelledby="evidence-heading">
+      <div class="shell">
+        <h2 id="evidence-heading">Status</h2>
+        <dl class="chips">
+          <div class="chip">
+            <dt>version</dt>
+            <dd>1.0.0</dd>
+          </div>
+          <div class="chip">
+            <dt>sweep</dt>
+            <dd>2026-09</dd>
+          </div>
+          <div class="chip">
+            <dt>entries</dt>
+            <dd>47</dd>
+          </div>
+        </dl>
+        <p class="family">Part of the awesome-mbse list family.</p>
+      </div>
+    </section>
+
+    <section id="sections" aria-labelledby="sections-heading">
+      <div class="shell">
+        <h2 id="sections-heading">Sections</h2>
+        <p class="muted prose">Nine README anchors. Open a section on GitHub.</p>
+        <ul class="section-index">
+          <li><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#official-resources">Official Resources</a></li>
+          <li><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#books-and-formal-publications">Books and Formal Publications</a></li>
+          <li><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#papers-and-case-studies">Papers and Case Studies</a></li>
+          <li><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#training-and-courses">Training and Courses</a></li>
+          <li><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#videos-and-talks">Videos and Talks</a></li>
+          <li><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#example-models">Example Models</a></li>
+          <li><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#tool-support">Tool Support</a></li>
+          <li><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#community">Community</a></li>
+          <li><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/README.md#related-methodologies">Related Methodologies</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="curation" aria-labelledby="curation-heading">
+      <div class="shell">
+        <h2 id="curation-heading">Curation</h2>
+        <p class="prose">Public-domain (CC0) curated index of MagicGrid methodology resources. Every entry links to a legitimate public source; the list does not re-host upstream content, including the Book of Knowledge. Maintained independently of Dassault Systemes and No Magic.</p>
+      </div>
+    </section>
+
+    <section id="contribute" aria-labelledby="contribute-heading">
+      <div class="shell">
+        <h2 id="contribute-heading">Contribute</h2>
+        <p class="muted prose">Pull requests are welcome; the inclusion criteria and entry format live in contributing.md.</p>
+        <ul class="link-list">
+          <li><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/contributing.md">How to contribute</a></li>
+          <li><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/issues">Suggest a resource or report a dead link</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <p>
+        Licence: <a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/blob/main/LICENSE">CC0-1.0</a>.
+        <a href="https://labs.jgsystemsconsulting.com/licensing.html">Licence enquiries</a>.
+        Maintained by JG Systems Consulting Ltd.
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
