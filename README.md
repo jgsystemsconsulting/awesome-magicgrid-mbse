@@ -1,11 +1,6 @@
 # Awesome MagicGrid MBSE [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-<p align="right">
-  <a href="https://jgsystemsconsulting.github.io/awesome-magicgrid-mbse/">
-    <img src="media/logo.svg" width="256" alt="list mark">
-  </a>
-</p>
-
+[<img src="media/logo.svg" align="right" width="100" alt="MagicGrid MBSE">](https://jgsystemsconsulting.github.io/awesome-magicgrid-mbse/)
 
 > MagicGrid method and MBSE practice for systems modeling toolchains.
 
