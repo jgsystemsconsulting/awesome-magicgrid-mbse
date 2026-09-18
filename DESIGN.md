@@ -35,6 +35,7 @@ Family tokens from the awesome-archimate contract, reused unchanged so sibling l
 --color-surface-3: oklch(1.0 0 0);
 --color-primary: oklch(0.19 0.015 260);
 --color-accent: oklch(0.58 0.17 253);
+--color-accent-ink: color-mix(in oklch, var(--color-accent) 88%, var(--color-primary));
 --color-text: oklch(0.17 0.012 258);
 --color-text-muted: oklch(0.50 0.012 258);
 --color-border: oklch(0.915 0.008 255);
@@ -44,7 +45,7 @@ Family tokens from the awesome-archimate contract, reused unchanged so sibling l
 --color-attention: oklch(0.55 0.12 85);
 ```
 
-**Derivation notes:** bg/surfaces stay near-white with cool 255 hue so the page reads as one system. Primary and text are near-black ink (no coloured headings). Accent is a single blue at hue 253 inside 250-256, reserved for links, focus, active nav, and the primary CTA border/fill. Semantic colours are functional only (issue/success states), not decoration. Tag chips use surface-1 + border + muted text; never per-tag rainbow hues.
+**Derivation notes:** bg/surfaces stay near-white with cool 255 hue so the page reads as one system. Primary and text are near-black ink (no coloured headings). Accent is a single blue at hue 253 inside 250-256, reserved for links, focus, active nav, and the primary CTA border/fill. Semantic colours are functional only (issue/success states), not decoration. Tag chips use surface-1 + border + muted text; never per-tag rainbow hues. `--color-accent-ink` is a local derived shade (88 percent accent, 12 percent primary, same hue) used wherever the accent carries text or a CTA fill, because the raw accent misses WCAG AA there (4.30:1 white on accent; 4.24:1 accent on surface). The derived shade measures 5.25:1 and 5.02:1 respectively. Sibling landings may adopt the same derivation; the base tokens are unchanged.
 
 ## Typography
 
