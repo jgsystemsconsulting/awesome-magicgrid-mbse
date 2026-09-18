@@ -27,7 +27,7 @@ P5 so the acceptability assessment reads enforced CI, not an advisory scan.
 | name | landing-truth-gate |
 | size | M |
 | deps | none |
-| status | in-flight |
+| status | done |
 | promoted_ids | [] |
 | corroboration | 3 (value, risk, cohesion) |
 | first_prompt | `/superpowers-process full landing truth gate` |
