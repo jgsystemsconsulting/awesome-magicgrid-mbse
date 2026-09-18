@@ -69,13 +69,13 @@ REQUIRED = [
     "README.md", "LICENSE", "CHANGELOG.md", "CITATION.cff",
     "SECURITY.md", "CODE_OF_CONDUCT.md", "contributing.md",
     "RELEASE-INFO.txt", "DESIGN.md", "DESIGN_BRIEF.md",
-    "docs/index.html", "scripts/check_release.py",
+    "docs/index.html", "docs/DISTRIBUTION.md", "scripts/check_release.py",
 ]
 ```
 
 Missing entry appends `required file missing: {f}`.
 
-Decision, docs/DISTRIBUTION.md: omitted from REQUIRED. The file does not exist yet and P5 authors it. A REQUIRED entry with a dated exception would let the gate pass while reporting a missing file as required, which is dishonest, and would need a second edit later to clean up. P5 adds the file and appends the REQUIRED line in the same change, so every REQUIRED entry is true at gate time. Likewise `docs/superpowers/backlog.md` (present today) is not gated: it is an internal planning artifact and its absence must not block a release. This repo tracks no `.gitignore`, so none is listed.
+Decision, docs/DISTRIBUTION.md: required. P5 authored the file and appended it to REQUIRED in the same change so every REQUIRED entry is true at gate time. `docs/superpowers/backlog.md` (present today) is not gated: it is an internal planning artifact and its absence must not block a release. This repo tracks no `.gitignore`, so none is listed.
 
 Assertion 2: forbidden tracked paths. Run `git ls-files` via subprocess with `capture_output=True` and `text=True`. If returncode is non-zero, append `git ls-files failed: exit {code}` and skip the path walk. Otherwise split stdout on newlines; for each tracked path, a failure if any of these parts appears in the path: `__pycache__`, `.venv`, `.worktrees`, `.pytest_cache`, `.ruff_cache`, `.bak`. Failure form: `forbidden tracked path: {f}`.
 

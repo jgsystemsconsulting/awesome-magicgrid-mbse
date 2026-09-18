@@ -23,7 +23,7 @@ REQUIRED = [
     "README.md", "LICENSE", "CHANGELOG.md", "CITATION.cff",
     "SECURITY.md", "CODE_OF_CONDUCT.md", "contributing.md",
     "RELEASE-INFO.txt", "DESIGN.md", "DESIGN_BRIEF.md",
-    "docs/index.html", "scripts/check_release.py",
+    "docs/index.html", "docs/DISTRIBUTION.md", "scripts/check_release.py",
 ]
 for f in REQUIRED:
     if not pathlib.Path(f).is_file():
