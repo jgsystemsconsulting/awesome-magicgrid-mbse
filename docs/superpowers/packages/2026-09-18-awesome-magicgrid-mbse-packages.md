@@ -121,7 +121,7 @@ package) resolved at the proposal stop: out, because DESIGN.md Imagery says
 | name | link-check-product-surface |
 | size | S |
 | deps | P2 |
-| status | ready |
+| status | done |
 | promoted_ids | [] |
 | corroboration | 3 (value, risk, cohesion) |
 | first_prompt | `/superpowers-process full link check product surface` |
