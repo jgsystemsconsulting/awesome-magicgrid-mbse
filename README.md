@@ -97,4 +97,36 @@
 
 ## Contributing
 
-See [contributing.md](contributing.md) for the inclusion criteria, entry format, local lint commands, and maintenance cadence.
+Contributions welcome: see [contributing.md](contributing.md) for the inclusion bar,
+entry format, and tag vocabulary.
+
+## Install
+
+Nothing to install. This list is a curated index: browse it here on GitHub,
+or clone it:
+
+```bash
+git clone https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse.git
+```
+
+## Usage
+
+1. Open the Contents at the top and jump to a section, or search the page with
+   your browser's find function.
+2. Open any entry's link to reach the upstream resource; the list never
+   re-hosts content.
+3. To suggest a resource or report a defect, use the Support channels below
+   (or open a pull request that follows contributing.md).
+
+## Support
+
+- Bug or dead link: open an issue on this repository
+- Suggest a resource (the list's improvement channel): open a pull request
+  that follows contributing.md, or open an issue
+- Security issues: [private security advisory](https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse/security/advisories/new)
+  (see [SECURITY.md](SECURITY.md))
+
+## Version
+
+Current release: **1.0.0** (2026-09-18). See [CHANGELOG.md](CHANGELOG.md) and
+[RELEASE-INFO.txt](RELEASE-INFO.txt).
