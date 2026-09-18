@@ -8,7 +8,7 @@
 
 A curated list of resources for the MagicGrid MBSE methodology: official material, the Book of Knowledge, papers and case studies, talks, training, example models, and tool support. For SysML v2 language and tooling, see the sister list under Related Methodologies.
 
-> This list is maintained independently. It is not affiliated with, endorsed by, or sponsored by Dassault Systemes or No Magic. MagicGrid is a methodology brand of No Magic, now part of Dassault Systemes. Every entry links to a legitimate public source; this list does not host copies of the MagicGrid Book of Knowledge or other copyrighted material.
+> MagicGrid method and MBSE practice for systems modeling toolchains.
 
 ![Last full sweep: 2026-09](https://img.shields.io/badge/last%20full%20sweep-2026--09-brightgreen)
 
