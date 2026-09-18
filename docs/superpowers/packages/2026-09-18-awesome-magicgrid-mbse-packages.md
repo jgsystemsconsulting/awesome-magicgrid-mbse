@@ -204,7 +204,7 @@ to P5 authoring. Grade is PASS under the corrected deps.
 | name | distribution-status-ledger |
 | size | S |
 | deps | P1, P3, P4 |
-| status | ready |
+| status | done |
 | promoted_ids | [] |
 | corroboration | 2 (value, cohesion; value proposed this as two packages, unioned here) |
 | first_prompt | `/superpowers-process full distribution ledger and awesome acceptability assessment` |
