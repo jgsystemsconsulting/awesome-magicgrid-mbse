@@ -79,7 +79,7 @@ lens-stage citations, which were resolved against the working tree.
 | name | landing-visitor-copy |
 | size | S |
 | deps | P1 |
-| status | ready |
+| status | done |
 | promoted_ids | [] |
 | corroboration | 2 (value, cohesion) |
 | first_prompt | `/superpowers-process full landing visitor copy` |
