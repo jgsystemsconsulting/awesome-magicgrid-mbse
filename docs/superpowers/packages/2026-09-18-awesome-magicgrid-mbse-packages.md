@@ -248,7 +248,7 @@ corrected deps.
 | name | ff-merge-pages-landing |
 | size | S |
 | deps | P1, P2, P3, P5 |
-| status | in-flight |
+| status | done |
 | promoted_ids | [] |
 | corroboration | 1 (value; risk and cohesion routed it to backlog as release chore) |
 | first_prompt | `/superpowers-process full ff merge pages landing` |
