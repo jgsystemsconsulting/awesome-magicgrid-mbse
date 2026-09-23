@@ -4,9 +4,6 @@
 
 > MagicGrid method and MBSE practice for systems modeling toolchains.
 
-
-> MagicGrid method and MBSE practice for systems modeling toolchains.
-
 ![Last full sweep: 2026-09](https://img.shields.io/badge/last%20full%20sweep-2026--09-brightgreen)
 
 People and organizations behind these resources: [awesome-mbse-community](https://github.com/jgsystemsconsulting/awesome-mbse-community).
