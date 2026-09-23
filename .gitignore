@@ -10,3 +10,6 @@ sa-audit-*.json
 .worktrees/
 ~$*
 .~lock.*#
+
+# Internal workflow artifacts stay local (RR-B-35, release-repo-standard)
+docs/superpowers/
