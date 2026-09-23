@@ -22,6 +22,10 @@ People and organizations behind these resources: [awesome-mbse-community](https:
 - [Tool Support](#tool-support)
 - [Community](#community)
 - [Related Methodologies](#related-methodologies)
+- [Install](#install)
+- [Usage](#usage)
+- [Support](#support)
+- [Version](#version)
 
 ## Official Resources
 
