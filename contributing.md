@@ -1,6 +1,6 @@
 # Contributing to Awesome MagicGrid MBSE
 
-**Lint is mandatory.** awesome-lint on README.md must pass on every push/PR to main. See [docs/MATURITY.md](docs/MATURITY.md).
+**Lint is mandatory.** awesome-lint on README.md must pass on every push/PR to main. See [MATURITY.md](MATURITY.md).
 
 Suggestions and pull requests are welcome. Every entry and every PR must meet the criteria below.
 
